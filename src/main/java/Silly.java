@@ -73,13 +73,6 @@ public class Silly implements Comparable<Silly>{
     }
 
     /**
-     * TODO (Task 1): Create another constructor that takes in TWO parameters,
-     *       both of which are strings.
-     *       Afterwards, set this.name to the concatenation of both
-     *       strings (e.g. this.name = [first string] + [second string]).
-     *       Make sure you document this method!
-     */
-    /**
      * Creates a new Silly object.
      * This constructor takes in two Strings as arguments.
      *
@@ -206,7 +199,7 @@ public class Silly implements Comparable<Silly>{
          *                You can get the length of a string by using the
          *                .length() method.
          */
-        int otherLength = ((Silly) other).name.length();
+        int otherLength = other.name.length();
         int thisLength = this.name.length();
 
         return thisLength - otherLength;
